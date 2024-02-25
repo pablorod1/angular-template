@@ -167,3 +167,9 @@ section {
     max-width: 70%; /* Usa el 100% del ancho en dispositivos más pequeños */
   }
 }
+
+@media (min-width: 1024px) { /* Aplica estilos específicos para tablets y móviles */
+  .container {
+    max-width: 90%; /* Usa el 100% del ancho en dispositivos más pequeños */
+  }
+}
