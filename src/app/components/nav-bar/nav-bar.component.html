@@ -1,0 +1,143 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse" data-bs-auto-close="false" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
+      <i class="menu"><app-menu-icon></app-menu-icon></i>
+    </button>
+    <a class="navbar-brand mt-lg-0" href="#">
+      LucentiaLab
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="" class="dropdown-item"> <app-form-icon></app-form-icon> Register Page</a>
+              <ul class="dropdown-menu dropdown-submenu">
+                <li>
+                  <a class="dropdown-item" href="/register1">Example 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/register2">Example 2</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="" class="dropdown-item"> <app-login-icon></app-login-icon> Login Page</a>
+              <ul class="dropdown-menu dropdown-submenu">
+                <li>
+                  <a class="dropdown-item" href="/login1">Example 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/login2">Example 2</a>
+                </li>
+              </ul>
+            </li>
+            <!--<li><button class="dropdown-item" href="#"> <app-pc-icon></app-pc-icon> SignUp/Login Page</button>
+              <ul class="dropdown-menu dropdown-submenu">
+                <li>
+                  <a class="dropdown-item" href="animated1">Example 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Example 2</a>
+                </li>
+              </ul>
+            </li> -->
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/product">Product</a>
+        </li>
+      </ul>
+    </div>
+    <div class=" right-container d-flex align-items-center">
+      <button class="btn mb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <app-cart-icon></app-cart-icon>
+      </button>
+      <div class="dropdown">
+        <a
+          data-mdb-dropdown-init
+          class="text-reset px-2 dropdown-toggle hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          aria-expanded="false"
+        >
+          <app-notification-icon></app-notification-icon>
+          <span class="badge rounded-circle bg-danger">1</span>
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-noti"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <li>
+            <a class="dropdown-item" href="#">Some news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Another news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+        </ul>
+      </div>
+      <a href="/acc-settings">
+        <button class="btn mb-1" type="button">
+          <app-config-icon></app-config-icon>
+        </button>
+      </a>
+      <div class="dropdown">
+        <a
+          data-mdb-dropdown-init
+          class="dropdown-toggle px-2 d-flex align-items-center hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuAvatar"
+          role="button"
+          aria-expanded="false"
+        >
+          <img
+            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+            class="rounded-circle"
+            height="25"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-profile"
+          aria-labelledby="navbarDropdownMenuAvatar"
+        >
+          <li>
+            <a class="dropdown-item" href="/profile" role="button" aria-expanded="false">
+              <app-user-icon></app-user-icon> Profile Page
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#"><app-logout-icon></app-logout-icon> Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title" id="offcanvasRightLabel">Your Cart</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="offcanvas-body">
+    <app-cart></app-cart>
+  </div>
+</div>

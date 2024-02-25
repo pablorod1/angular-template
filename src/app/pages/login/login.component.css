@@ -1,0 +1,337 @@
+section{
+    display: block;
+    background-color: #f3f3f3;
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .col{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding: 50px 80px 10px 80px;
+  }
+  
+  
+  
+  .card{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    min-width: none;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0.0625rem solid rgba(0,0,0,.05);
+    border-radius: 0.3rem;
+    width: 500px;
+    height: 550px;
+  }
+  
+
+  .shadow{
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07)!important;
+  }
+  
+  
+  .bg-secondary{
+    background-color: #f9f9f9!important;
+  }
+  
+  .card-header:first-child{
+    border-radius: calc(0.25rem - 0.0625rem) calc(0.25rem - 0.0625rem) 0 0;
+  }
+  
+  .bg-white{
+    background-color: #f1f1f1!important;
+  }
+  
+  .pb-5{
+    padding-bottom: 1rem!important;
+  }
+  
+  .card-header{
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 0;
+    background-color: #f6f9fc;
+    border-bottom: 0.0625rem solid rgba(0,0,0,.05);
+  }
+  
+  .btn2{
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    border-radius: 0.25rem;
+    height: 46px;
+  }
+  
+  .text-muted{
+    color: #023047!important;
+  }
+  
+  .text-center{
+    text-align: center!important;
+  }
+  
+  .mb-3{
+    margin-bottom: 1rem!important;
+    margin-top: 1.5rem!important;
+  }
+  
+  
+  .font-italic{
+    font-style: italic!important;
+  }
+  
+  .text-success{
+    font-weight: bold;
+  }
+  
+  .btn:not(:disabled):not(.disabled){
+    cursor: pointer;
+  }
+  
+  .btn:not(:last-child){
+    margin-right: 0.5rem;
+  }
+  
+  .btn-neutral{
+    color: #023047;
+    background-color: #f1f1f1;
+    border-color: #fff;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  }
+  
+  .btn{
+    position: relative;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: all .15s ease;
+    will-change: transform;
+    letter-spacing: .025em;
+    font-size: .875rem;
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.625rem 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.25;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  
+  a{
+    color: #5e72e4;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+  }
+  
+  input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+  }
+  
+  
+  
+  .mt-4{
+    margin-top: 3rem!important;
+  }
+  
+  
+  .mat-icon{
+    font-size: 24px;
+  }
+  
+  .mt-3{
+    margin-top: 1.5rem!important;
+  }
+  
+  .form-check-input{
+    width: 1%;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+
+    box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
+  }
+
+  .form-check-input:checked{
+    background-color: #ff9f31;
+  }
+  
+  .form-check-label{
+    padding: 0 10px;
+
+  }
+  
+  
+  
+  .btn-primary{
+    color: #f9f9f9;
+    background-color: #ff9f31;
+    border-color: #ff9f31;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  }
+  
+  form{
+    display: block;
+    margin-top: 0em;
+    padding-top: 30px;
+  }
+  
+  
+  .input-group-alternative{
+    box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
+    border: 0;
+    transition: box-shadow .15s ease;
+  }
+  
+  .input-group{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    box-shadow: 2px;
+    border-radius: 0.25rem;
+    transition: all .15s ease;
+  }
+  
+  
+  
+  
+  .input-group-prepend{
+    margin-right: -1px;
+    display: flex;
+  
+  }
+  
+  .input-group>.input-group-prepend>.input-group-text{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .input-group-text{
+    display: flex;
+    align-items: center;
+    padding: 0.625rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #adb5bd;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #fff;
+    border: 1px solid #cad1d7;
+    border-radius: 0.25rem;
+    
+  }
+  
+  .ui{
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  i{
+    font-style: italic;
+  }
+  
+  .input-group-alternative .input-group-text{
+    border: 0;
+    box-shadow: none;
+  }
+  
+  .input-group .form-control:not(:first-child){
+    border-left: 0;
+    padding-left: 0;
+  }
+  
+  .input-group>.form-control:not(:first-child){
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .input-group-alternative .form-control{
+    border: 0;
+    box-shadow: none;
+  }
+  
+  .input.group .form-control{
+    box-shadow: none;
+  }
+  
+  .input-group>.form-control{
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+  }
+  
+  .form-control{
+    font-size: .875rem;
+    display: block;
+    width: 100%;
+    height: calc(2.75rem + 2px);
+    padding: 0.625rem 0.75rem;
+    line-height: 1.5;
+    color: #3e464f;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #cad1d7;
+    border-radius: 0.25rem;
+    box-shadow: none;
+    transition: all .2 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .form-control::placeholder{
+    opacity: 60%;
+  }
+  
+  .form-control:focus::placeholder{
+    opacity: 0;
+    transition: 0.2s;
+  }
+  
+  input{
+    overflow: visible;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  *, ::after, ::before{
+    box-sizing: border-box;
+  }
+  
+  
+  

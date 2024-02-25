@@ -1,0 +1,133 @@
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="card shadow">
+          <div class="card-header">
+            <div class="text-muted text-center">
+              <small>Sign up with</small>
+              <div class="text-center">
+                <a class="btn btn-neutral mt-2" href="#">
+                  <span class="btn-inner--icon"><app-google-icon></app-google-icon></span>
+                  <span class="btn-inner--text">Google</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="text-muted text-center">
+              <br />Or sign up with credentials
+            </div>
+            <form [formGroup]="registerForm1" (ngSubmit)="onSubmit()">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="ui"><app-user-icon></app-user-icon></i>
+                  </div>
+                </div>
+                <input class="form-control" placeholder="Name" type="text" formControlName="firstName" [ngClass]="{'is-invalid': registerForm1.get('firstName')?.errors?.['required'] && submitted}" [ngClass]="{'is-valid': registerForm1.get('firstName')?.valid}"/>
+              </div>
+              <small class="text-danger" *ngIf="
+                  registerForm1.get('firstName')?.invalid &&
+                  submitted
+                ">
+                Name is required.
+              </small>
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i  class="ui"><app-user-icon></app-user-icon></i>
+                  </div>
+                </div>
+                <input class="form-control" placeholder="Last Name" type="text" formControlName="lastName" [ngClass]="{'is-invalid': registerForm1.get('lastName')?.errors?.['required'] && submitted}" [ngClass]="{'is-valid': registerForm1.get('lastName')?.valid}"/>
+              </div>
+              <small class="text-danger last-name-alert" *ngIf="
+                  registerForm1.get('lastName')?.invalid &&
+                  submitted
+                ">
+                Last name is required.
+              </small>
+              <div class="input-group input-group-alternative mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="ui"><app-email-icon></app-email-icon></i>
+                  </span>
+                </div>
+                <input class="form-control" placeholder="Email" type="email" formControlName="email" [ngClass]="{'is-invalid': (registerForm1.get('email')?.errors?.['required'] || registerForm1.get('email')?.errors?.['email']) && submitted}" [ngClass]="{'is-valid': registerForm1.get('email')?.valid}"/>
+              </div>
+              <small class="text-danger" *ngIf="
+                  registerForm1.get('email')?.errors?.['required'] &&
+                  submitted
+                ">
+                Email is required.
+              </small>
+              <small class="text-danger" *ngIf="registerForm1.get('email')?.errors?.['email'] &&
+                submitted">
+                Email format is incorrect.
+              </small>
+              <div class="input-group input-group-alternative mt-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="ui"><app-key-icon></app-key-icon></i>
+                  </span>
+                </div>
+                <input matInput [type]="hide ? 'password' : 'text'" class="form-control" placeholder="Password"
+                  formControlName="password" [ngClass]="{'is-invalid': registerForm1.get('password')?.invalid && submitted}" [ngClass]="{'is-valid': registerForm1.get('password')?.valid}"/>
+                <button class="btn2" mat-icon-button matSuffix (click)="hide = !hide"
+                  [attr.aria-label]="'Hide Password'" [attr.aria-pressed]="hide">
+                  <mat-icon>{{
+                    hide ? "visibility_off" : "visibility"
+                    }}</mat-icon>
+                </button>
+              </div>
+              <div class="text-muted mt-2">
+                <small class="text-danger" *ngIf="
+                    registerForm1.get('password')?.invalid &&
+                    submitted
+                  ">
+                  Password must be 8-20 characters.
+                </small>
+              </div>
+              <div class="input-group input-group-alternative mt-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="ui"><app-key-icon></app-key-icon></i>
+                  </span>
+                </div>
+                <input matInput [type]="hide ? 'password' : 'text'" class="form-control" placeholder="Confirm Password"
+                  formControlName="confirmPassword" [ngClass]="{'is-invalid': !registerForm1.get('confirmPassword')?.errors?.['passwordNoMatch'] && submitted}" [ngClass]="{'is-valid': registerForm1.get('confirmPassword')?.errors?.['passwordNoMatch'] && submitted}"/>
+                <button class="btn2" mat-icon-button matSuffix (click)="hide = !hide"
+                  [attr.aria-label]="'Hide Password'" [attr.aria-pressed]="hide">
+                </button>
+              </div>
+              <small class="text-danger" *ngIf="submitted &&
+                  registerForm1.errors?.['passwordNoMatch']
+                ">
+                Password doesn't match.
+              </small>
+              <div class="form-check mt-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                  formControlName="agreeTerms" />
+                <label class="form-check-label" for="flexCheckDefault">
+                  I agree to the <a href="#">terms and conditions</a>.
+                </label>
+                <small class="text-danger" *ngIf="
+                    registerForm1.get('agreeTerms')?.invalid &&
+                    (registerForm1.get('agreeTerms')?.touched ||
+                      registerForm1.get('agreeTerms')?.dirty)
+                  ">
+                  You must accept Terms and Conditions.
+                </small>
+              </div>
+              <div class="text-center">
+                <button class="btn btn3 mt-4" type="submit" [disabled]="registerForm1.get('agreeTerms')?.invalid">
+                  Create Account
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

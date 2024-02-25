@@ -1,0 +1,151 @@
+.section {
+  display: block;
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: #023047;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+
+}
+
+.section-item {
+  width: 100%; 
+}
+
+.container {
+  padding: 0 20px; 
+}
+
+.row{
+  display: flex;
+  align-items: center;
+}
+
+.btn{
+  color: #f2f2f2;
+  background-color: #ff9f31;
+  border: 1px solid #ff9f31;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn:active{
+  color: #f2f2f2;
+  background-color: #ff9f31;
+  border: 1px solid #ff9f31;
+  box-shadow:  0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23), inset 0 1px 2px rgba(0, 0, 0, 0.06) !important;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+
+
+.carousel-item.active img, .carousel-item img{
+  width: 410px;
+  height: 610px;
+  object-fit: contain;
+}
+
+app-star-icon, app-half-star-icon, app-arrow-left-circle, app-arrow-right-circle{
+  fill: #ff9f31;
+}
+
+app-cart-icon{
+  fill: #f9f9f9;
+}
+
+.info-container{
+  h1{
+    font-size: 2rem;
+  }
+}
+
+small{
+  padding-bottom: 10px!important;
+}
+
+.ml-4{
+  margin-left: 20px;
+}
+.mr-4{
+  margin-right: 20px;
+}
+
+.btn-circle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ff9f31;
+  color: #ff9f31;
+}
+
+.btn-circle2{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #f9f9f9;
+}
+
+.btn-circle2:focus{
+  box-shadow:  0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23), inset 0 1px 2px rgba(0, 0, 0, 0.06) !important;
+}
+
+
+.bg-red{
+  background-color: red;
+}
+
+.bg-brown{
+  background-color: #e1c699;
+}
+
+.bg-green{
+  background-color: #355E3B;
+}
+
+.bg-blue{
+  background-color: lightblue;
+}
+
+
+.btn-circle:enabled:hover{
+  background-color: #ff9f31;
+  color: white;
+}
+
+.btn-circle:active{
+  box-shadow:  0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23), inset 0 1px 2px rgba(0, 0, 0, 0.06) !important;
+}
+
+.select {
+  appearance: none;
+  padding: 10px 15px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  color: #333; 
+  width: 100%; 
+  cursor: pointer; 
+
+
+}
+
+.select:focus {
+  outline: none; 
+  border-color: #023047;
+  box-shadow:  0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23), inset 0 1px 2px rgba(0, 0, 0, 0.06) !important;
+}
+
+app-cart-icon{
+  margin-right: 5px;
+  margin-bottom: 10px!important;
+}

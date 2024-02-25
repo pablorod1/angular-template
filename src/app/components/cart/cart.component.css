@@ -1,0 +1,47 @@
+img{
+    width: 90%;
+    height: 90%;
+}
+
+.card{
+    margin-right: 15px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    color: #f2f2f2;
+    background-color: #ff9f31;
+    border: 1px solid #ff9f31;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:active{
+    color: #f2f2f2;
+    background-color: #ff9f31;
+    border: 1px solid #ff9f31;
+    box-shadow:  0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23), inset 0 1px 2px rgba(0, 0, 0, 0.06) !important;
+}
+  
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}

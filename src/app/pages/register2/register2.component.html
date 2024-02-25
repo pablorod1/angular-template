@@ -1,0 +1,92 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col col-right">
+        <div class="card shadow">
+          <div class="card-body"></div>
+          <div class="row">
+            <div class="col py-3">
+              <h1>Register</h1>
+            </div>
+          </div>
+          <div class="social">
+            <button class="btn1"><app-google-icon></app-google-icon></button>
+          </div>
+          <div class="divider">
+            <p>Or sign up with credentials</p>
+          </div>
+          <form [formGroup]="registerForm2" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <div class="row g-2">
+                <div class="col-md">
+                  <div class="form-floating mb-3">
+                    <input type="text" formControlName="firstName" required class="form-control"
+                      id="floatingInput firstName" placeholder="Name"  [ngClass]="{'is-invalid': registerForm2.get('firstName')?.errors?.['required'] && submitted}" [ngClass]="{'is-valid': registerForm2.get('firstName')?.valid}"/>
+                    <label for="floatingInput firstName"><app-user-icon></app-user-icon>Name</label>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="form-floating mb-3">
+                    <input type="text" formControlName="lastName" required class="form-control" id="floatingInput"
+                      placeholder="Last Name" [ngClass]="{'is-invalid': registerForm2.get('lastName')?.errors?.['required'] && submitted}" [ngClass]="{'is-valid': registerForm2.get('lastName')?.valid}"/>
+                    <label for="floatingInput">Last Name</label>
+                  </div>
+                </div>
+              </div>
+              <small class="text-danger" *ngIf="registerForm2.get('firstName')?.invalid && submitted">Name is required.</small>
+              <small class="text-danger last-name-alert" *ngIf="registerForm2.get('lastName')?.invalid && submitted">Last name is required.</small>
+              <div class="form-floating mb-3">
+                <input type="email" formControlName="email" required class="form-control" id="floatingInput"
+                  placeholder="name@example.com" [ngClass]="{'is-invalid': (registerForm2.get('email')?.errors?.['required'] || registerForm2.get('email')?.errors?.['email']) && submitted}" [ngClass]="{'is-valid': registerForm2.get('email')?.valid}"/>
+                <label for="floatingInput"><app-email-icon></app-email-icon>Email</label>
+              </div>
+              <small class="text-danger" *ngIf="registerForm2.get('email')?.invalid && submitted">Email is required.</small>
+              <small class="text-danger" *ngIf="registerForm2.get('email')?.errors?.['email'] && submitted">Email format is incorrect.</small>
+              <div class="form-floating" mb-3>
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" class="form-control" style="width: 93%;"
+                  id="floatingPassword" placeholder="Password"  [ngClass]="{'is-invalid': registerForm2.get('password')?.invalid && submitted}" [ngClass]="{'is-valid': registerForm2.get('password')?.valid}"/>
+                <button class="btn3 py-3" mat-icon-button matSuffix (click)="hide = !hide"
+                  [attr.aria-label]="'Hide Password'" [attr.aria-pressed]="hide">
+                  <mat-icon>{{
+                    hide ? "visibility_off" : "visibility"
+                    }}</mat-icon>
+                </button>
+                <label for="floatingPassword"><app-key-icon></app-key-icon>Password
+                </label>
+              </div>
+              <span id="passwordHelpInline" class="form-text" *ngIf="
+                  registerForm2.get('password')?.invalid &&
+                  submitted
+                ">
+                Must be 8-20 characters long.
+              </span>
+              <div class="form-floating mt-3">
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="confirmPassword" class="form-control form-input.pass"
+                  id="floatingPassword" placeholder="Password" [ngClass]="{'is-invalid': !registerForm2.get('confirmPassword')?.errors?.['passwordNoMatch'] && submitted}" [ngClass]="{'is-valid': registerForm2.get('confirmPassword')?.errors?.['passwordNoMatch'] && submitted}"/>
+                <label for="floatingPassword"><app-key-icon></app-key-icon> Confirm Password
+                </label>
+              </div>
+              <small class="text-danger" *ngIf="submitted &&
+                  registerForm2.errors?.['passwordNoMatch']
+                ">
+                Password doesn't match.
+              </small>
+              <div class="form-check mt-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                  formControlName="agreeTerms" />
+                <label class="form-check-label" for="flexCheckDefault">
+                  I agree to the <a href="#">terms and conditions</a>.
+                </label>
+              </div>
+            </div>
+            <div class="signup">
+              <button type="submit" [disabled]="registerForm2.get('agreeTerms')?.invalid" class="btn2 mt-4">
+                Create Account
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

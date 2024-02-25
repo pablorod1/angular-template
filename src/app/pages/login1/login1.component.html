@@ -1,0 +1,58 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card shadow">
+          <div class="card-header">
+            <div class="text-muted text-center ">
+              <small>Sign in with</small>
+            <div class="text-center">
+              <a class="btn btn-neutral mt-2" href="#">
+                <span class="btn-inner--icon"><app-google-icon></app-google-icon></span>
+                <span class="btn-inner--text">Google</span>
+              </a>
+            </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="text-muted text-center"><br>Or sign in with your credentials</div>
+              <form [formGroup]="loginForm1" (ngSubmit)="onSubmit()">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="ui"><app-email-icon></app-email-icon></i>
+                    </span>
+                  </div>
+                  <input class="form-control" placeholder="Email" type="email" formControlName="email" [ngClass]="{'is-invalid': (loginForm1.get('email')?.errors?.['required'] || loginForm1.get('email')?.errors?.['email']) && submitted}" [ngClass]="{'is-valid': loginForm1.get('email')?.valid}"/>
+                </div>
+                <small class="text-danger" *ngIf="loginForm1.get('email')?.errors?.['required'] && submitted">Email is required</small>
+                <small class="text-danger" *ngIf="loginForm1.get('email')?.errors?.['email'] && submitted">Email is incorrect</small>
+                <div class="input-group input-group-alternative mt-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="ui"><app-key-icon></app-key-icon></i>
+                    </span>
+                  </div>
+                  <input matInput [type]="hide ? 'password' : 'text'" class="form-control" placeholder="Password" formControlName="password" [ngClass]="{'is-invalid': loginForm1.get('password')?.invalid && submitted}" [ngClass]="{'is-valid': loginForm1.get('password')?.valid}"/>
+                  <button class="btn2" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'" [attr.aria-pressed]="hide">
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
+                </div>
+                <small class="text-danger" *ngIf="loginForm1.get('password')?.invalid && submitted">Password is required</small>
+                <div class="form-check mt-4">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" formControlName="remember">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Remember me
+                  </label>
+                </div>
+                <div class="text-center">
+                  <button class="btn btn3 mt-4" type="submit">Create Account</button>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
