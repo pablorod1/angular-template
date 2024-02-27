@@ -2,17 +2,13 @@ section {
   display: block;
   position: relative;
   padding-top: 4rem;
-  padding-bottom: 4rem;
+
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 50%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+.cards-container{
+  width: 100%;
 }
+
 
 .footer-container{
   display: flex;
@@ -148,28 +144,34 @@ section {
 
 
 .paginator {
-  position: absolute;
-  bottom: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
   mat-paginator {
     background-color: #f3f3f3;
-  }  
-}
-
-
-@media (max-width: 768px) { /* Aplica estilos específicos para tablets y móviles */
-  .container {
-    max-width: 60%; /* Usa el 100% del ancho en dispositivos más pequeños */
   }
 }
 
-@media (max-width: 1024px) { /* Aplica estilos específicos para tablets y móviles */
-  .container {
-    max-width: 70%; /* Usa el 100% del ancho en dispositivos más pequeños */
+@media (max-width:768px){
+  .cards-container{
+    width: 50%;
   }
 }
 
-@media (min-width: 1024px) { /* Aplica estilos específicos para tablets y móviles */
-  .container {
-    max-width: 90%; /* Usa el 100% del ancho en dispositivos más pequeños */
+@media (min-width: 768px) and (max-width: 1024px){
+  .cards-container{
+    width: 115%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px){
+  .cards-container{
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px){
+  .cards-container{
+    width: 115%;
   }
 }

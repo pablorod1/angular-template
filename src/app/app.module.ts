@@ -58,6 +58,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { CaretLeftComponent } from './icons/caret-left/caret-left.component';
 import { LogoutIconComponent } from './icons/logout-icon/logout-icon.component';
 import { SuitcaseIconComponent } from './icons/suitcase-icon/suitcase-icon.component';
+import { TablesComponent } from './pages/tables/tables.component';
 
 
 
@@ -107,6 +108,7 @@ import { SuitcaseIconComponent } from './icons/suitcase-icon/suitcase-icon.compo
     CaretLeftComponent,
     LogoutIconComponent,
     SuitcaseIconComponent,
+    TablesComponent,
   ],
   imports: [
     BrowserModule,

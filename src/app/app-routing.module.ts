@@ -11,6 +11,7 @@ import { Animated1Component } from './pages/animated1/animated1.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { ProductComponent } from './pages/product/product.component';
+import { TablesComponent } from './pages/tables/tables.component';
 
 
 
@@ -27,7 +28,7 @@ const routes: Routes = [
   {path:'gallery', component: GalleryComponent},
   {path: 'checkout', component: CheckoutComponent},
   {path: 'product', component: ProductComponent},
-
+  {path: 'tables', component: TablesComponent},
 
 ];
 

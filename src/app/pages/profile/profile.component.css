@@ -14,12 +14,12 @@ section {
 }
 
 .card-header {
-  background: #30e8bf; 
+  background: #30e8bf;
   background: -webkit-linear-gradient(
     to right,
     #ff8235,
     #30e8bf
-  ); 
+  );
   background: linear-gradient(
     to right,
     #ff8235,
