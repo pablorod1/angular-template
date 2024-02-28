@@ -11,7 +11,10 @@ import { Animated1Component } from './pages/animated1/animated1.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { ProductComponent } from './pages/product/product.component';
-import { TablesComponent } from './pages/tables/tables.component';
+import { RegularTablesComponent } from './pages/regular-tables/regular-tables.component';
+import { ExtendedTablesComponent } from './pages/extended-tables/extended-tables.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { adminGuard } from './guards/admin.guard';
 
 
 
@@ -28,7 +31,10 @@ const routes: Routes = [
   {path:'gallery', component: GalleryComponent},
   {path: 'checkout', component: CheckoutComponent},
   {path: 'product', component: ProductComponent},
-  {path: 'tables', component: TablesComponent},
+  {path: 'regular', component: RegularTablesComponent},
+  {path: 'extended', component: ExtendedTablesComponent},
+  {path: 'admin', component:AdminComponent, canActivate:[adminGuard]},
+
 
 ];
 

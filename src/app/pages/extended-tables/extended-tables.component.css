@@ -1,0 +1,165 @@
+section{
+    display: block;
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border: 0;
+}
+
+.shadow{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16), 0 3px 10px rgba(0, 0, 0, 0.23),
+    inset 0 1px 2px rgba(0, 0, 0, 0.06) !important;
+}
+
+.card-header{
+    border: 0;
+}
+
+.dialog{
+    color: #023047;
+}
+
+
+.btn-green{
+    padding: 5px;
+    background-color: #22c55e;
+    color: #fff;
+    font-weight: 600;
+}
+.btn-green:hover{
+    background-color: #1da750;
+}
+
+
+.message{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.dropdown{
+    border-radius: 8px;
+}
+
+.form-check-input{
+    border: 1px solid #023047;
+}
+
+.input-form{
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #023047;
+}
+
+.input-form:focus{
+    box-shadow: inset 0 1px 2px #023047;
+    border: none;
+    outline: none;
+}
+
+.price-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.filter-input{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #023047;
+}
+
+.filter-input:focus{
+    outline: none;
+    box-shadow: inset 0 1px 3px #023047;
+}
+
+.export-btn{
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.export-container{
+    display: flex;
+    justify-content:end;
+    position: relative;
+    height: 60%;
+}
+
+.clear-btn{
+    color: #023047;
+    background-color: transparent;
+    border: 1px solid #023047;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform .2s ease-in-out;
+}
+
+.mt-5{
+    margin-top: 4rem!important;
+}
+
+.clear-btn:hover{
+    transform: scale(1.1);
+}
+
+
+
+.bi{
+    background-color: transparent;
+    border: 0;
+}
+
+.bi.bi-list{
+    font-size: 20px;
+}
+
+.bi.bi-pencil{
+    font-size: 18px;
+}
+
+.bi.bi-check2{
+    font-size: 20px;
+}
+
+.bi.bi-x{
+    font-size: 23px;
+}
+
+.bi.bi-plus-lg{
+    font-size: 20px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.filter-input {
+    padding-left: 30px; /* Espacio para el ícono */
+    width: 0; /* Inicialmente oculto */
+    overflow: hidden; /* Para ocultar completamente el input */
+    transition: width 0.3s ease; /* Transición suave al mostrar */
+}
+
+/* Mostrar el input cuando está dentro del contenedor y en foco */
+.input-container:focus-within .filter-input {
+    width: 250px;
+}

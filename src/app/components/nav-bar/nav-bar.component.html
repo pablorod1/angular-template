@@ -3,8 +3,9 @@
     <button
       class="navbar-toggler"
       type="button"
-      data-bs-toggle="collapse" data-bs-auto-close="false" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
-      <i class="menu"><app-menu-icon></app-menu-icon></i>
+      role="button"
+      data-bs-toggle="collapse" data-bs-auto-close="true" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list"></i>
     </button>
     <a class="navbar-brand mt-lg-0" href="#">
       LucentiaLab
@@ -15,56 +16,53 @@
         <li class="nav-item">
           <a class="nav-link" href="/">Home</a>
         </li>
+        <li class="nav-item" >
+          <a class="nav-link" href="/admin" *isGranted="'ADMINISTRATOR'">Admin Panel</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Pages
           </a>
           <ul class="dropdown-menu">
-            <li><a href="" class="dropdown-item"> <app-form-icon></app-form-icon> Register Page</a>
+            <li><a href="" class="nav-link dropdown-item" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-ui-checks"></i> Register Page</a>
               <ul class="dropdown-menu dropdown-submenu">
                 <li>
-                  <a class="dropdown-item" href="/register1">Example 1</a>
+                  <a class="dropdown-item" href="/register1">Client SignUp</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/register2">Example 2</a>
+                  <a class="dropdown-item" href="/register2">Seller SignUp</a>
                 </li>
               </ul>
             </li>
-            <li><a href="" class="dropdown-item"> <app-login-icon></app-login-icon> Login Page</a>
+            <li><a href="" class="nav-link dropdown-item" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-box-arrow-in-right"></i> Login Page</a>
               <ul class="dropdown-menu dropdown-submenu">
                 <li>
-                  <a class="dropdown-item" href="/login1">Example 1</a>
+                  <a class="dropdown-item" href="/login1">Client Login</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/login2">Example 2</a>
+                  <a class="dropdown-item" href="/login2">Seller Login</a>
                 </li>
               </ul>
             </li>
             <li><a class="dropdown-item" href="/gallery"><i class="bi bi-shop px-1"></i>Shop</a></li>
             <li><a class="dropdown-item" href="/product"><i class="bi bi-bag px-1"></i>Product</a></li>
-            <li><a class="dropdown-item" href="/checkout"><i class="bi bi-receipt-cutoff px-1"></i>Checkout</a></li>
-            <!--<li><button class="dropdown-item" href="#"> <app-pc-icon></app-pc-icon> SignUp/Login Page</button>
-              <ul class="dropdown-menu dropdown-submenu">
-                <li>
-                  <a class="dropdown-item" href="animated1">Example 1</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Example 2</a>
-                </li>
-              </ul>
-            </li> -->
+            <li><a class="dropdown-item" *isGranted="'CUSTOMER'" href="/checkout"><i class="bi bi-receipt-cutoff px-1"></i>Checkout</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/tables" role="button">
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Tables
           </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/regular" *isGranted="'ADMINISTRATOR'">Regular</a></li>
+            <li><a class="dropdown-item" href="/extended" *isGranted="'SELLER'">Extended</a></li>
+          </ul>
         </li>
       </ul>
     </div>
     <div class=" right-container d-flex align-items-center">
-      <button class="btn mb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-        <app-cart-icon></app-cart-icon>
+      <button class="btn mb-1" type="button" *isGranted="'CUSTOMER'" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <i class="bi bi-cart-fill"></i>
       </button>
       <div class="dropdown">
         <a
@@ -75,7 +73,7 @@
           role="button"
           aria-expanded="false"
         >
-          <app-notification-icon></app-notification-icon>
+          <i class="bi bi-bell-fill"></i>
           <span class="badge rounded-circle bg-danger">1</span>
         </a>
         <ul
@@ -95,7 +93,7 @@
       </div>
       <a href="/acc-settings">
         <button class="btn mb-1" type="button">
-          <app-config-icon></app-config-icon>
+          <i class="bi bi-gear-fill"></i>
         </button>
       </a>
       <div class="dropdown">
@@ -121,11 +119,11 @@
         >
           <li>
             <a class="dropdown-item" href="/profile" role="button" aria-expanded="false">
-              <app-user-icon></app-user-icon> Profile Page
+              <i class="bi bi-person-fill"></i> Profile Page
             </a>
           </li>
           <li>
-            <a class="dropdown-item" href="#"><app-logout-icon></app-logout-icon> Logout</a>
+            <a class="dropdown-item" href="#"><i class="bi bi-box-arrow-left"></i> Logout</a>
           </li>
         </ul>
       </div>

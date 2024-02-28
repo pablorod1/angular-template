@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { RbacService } from '../../services/rbac.service';
+import { Roles } from '../../types';
 
 
 @Component({
@@ -9,4 +11,8 @@ import { Component } from '@angular/core';
 })
 export class NavBarComponent {
   
+
+  ngOnInit() {
+    
+  }
 }

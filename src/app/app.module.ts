@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -50,7 +51,7 @@ import { StarIconComponent } from './icons/star-icon/star-icon.component';
 import { HalfStarIconComponent } from './icons/half-star-icon/half-star-icon.component';
 import { ArrowRightCircleComponent } from './icons/arrow-right-circle/arrow-right-circle.component';
 import { ArrowLeftCircleComponent } from './icons/arrow-left-circle/arrow-left-circle.component';
-
+import { TableModule } from 'primeng/table';
 import { MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
@@ -58,8 +59,23 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { CaretLeftComponent } from './icons/caret-left/caret-left.component';
 import { LogoutIconComponent } from './icons/logout-icon/logout-icon.component';
 import { SuitcaseIconComponent } from './icons/suitcase-icon/suitcase-icon.component';
-import { TablesComponent } from './pages/tables/tables.component';
-
+import { LogoutPopupComponent } from './components/logout-popup/logout-popup.component';
+import { RegularTablesComponent } from './pages/regular-tables/regular-tables.component';
+import { ExtendedTablesComponent } from './pages/extended-tables/extended-tables.component';
+import {TagModule}  from 'primeng/tag';
+import {RatingModule} from 'primeng/rating';
+import { DropdownModule } from 'primeng/dropdown';
+import {MultiSelectModule} from 'primeng/multiselect';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {DialogModule} from 'primeng/dialog';
+import {ConfirmDialogModule} from 'primeng/confirmdialog';
+import {MessagesModule} from 'primeng/messages';
+import { FieldsetModule } from 'primeng/fieldset';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { AdminComponent } from './components/admin/admin.component';
+import { IsGrantedDirective } from './directives/is-granted.directive';
+import { UserSelectorComponent } from './components/user-selector/user-selector.component';
 
 
 @NgModule({
@@ -108,10 +124,18 @@ import { TablesComponent } from './pages/tables/tables.component';
     CaretLeftComponent,
     LogoutIconComponent,
     SuitcaseIconComponent,
-    TablesComponent,
+    LogoutPopupComponent,
+    RegularTablesComponent,
+    ExtendedTablesComponent,
+    AdminComponent,
+    IsGrantedDirective,
+    UserSelectorComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MatIconModule,
     MatCheckboxModule,
@@ -125,6 +149,19 @@ import { TablesComponent } from './pages/tables/tables.component';
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
+    TableModule,
+    TagModule,
+    RatingModule,
+    DropdownModule,
+    MultiSelectModule,
+    MatTooltipModule,
+    MatToolbarModule,
+    DialogModule,
+    ConfirmDialogModule,
+    MessagesModule,
+    FieldsetModule,
+    RadioButtonModule,
+    
     
   ],
   providers: [

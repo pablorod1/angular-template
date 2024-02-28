@@ -82,50 +82,7 @@ section {
 
 }
 
-.social {
-  position: relative;
-  margin-top: 10px;
-  margin-right: 33px;
-  text-decoration: none;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
 
-  li {
-    padding: 20px;
-    transition: transform 0.1s ease;
-  }
-}
-
-.social li {
-  position: relative;
-}
-
-.social li a {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  opacity: 0;
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
-.social li:nth-child(1) a {
-  left: 0;
-  transition-delay: 0.2s;
-}
-
-.social li:nth-child(2) a {
-  left: 50%;
-  transform: translateX(-50%);
-  transition-delay: 0.4s;
-}
-
-.social li:nth-child(3) a {
-  right: 0;
-  transition-delay: 0.6s;
-}
 
 .card:hover .social li a {
   bottom: 0;
@@ -142,6 +99,10 @@ section {
 
 }
 
+.row-cols-1>*{
+  display: flex;
+  justify-content: center;
+}
 
 .paginator {
   display: flex;
@@ -152,26 +113,7 @@ section {
   }
 }
 
-@media (max-width:768px){
-  .cards-container{
-    width: 50%;
-  }
-}
 
-@media (min-width: 768px) and (max-width: 1024px){
-  .cards-container{
-    width: 115%;
-  }
-}
 
-@media (min-width: 1000px) and (max-width: 1200px){
-  .cards-container{
-    width: 100%;
-  }
-}
 
-@media (min-width: 1200px){
-  .cards-container{
-    width: 115%;
-  }
-}
+
