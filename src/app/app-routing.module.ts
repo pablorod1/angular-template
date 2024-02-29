@@ -15,24 +15,34 @@ import { RegularTablesComponent } from './pages/regular-tables/regular-tables.co
 import { ExtendedTablesComponent } from './pages/extended-tables/extended-tables.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { adminGuard } from './guards/admin.guard';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { LandingComponent } from './pages/landing/landing.component';
+import { PricingComponent } from './pages/pricing/pricing.component';
 
 
 
 const routes: Routes = [
   {path: '', redirectTo:'/home', pathMatch:'full'},
-  {path:'home', component: HomeComponent},
-  {path:'register1', component: Register1Component},
-  {path:'register2', component: Register2Component},
-  {path:'login1', component: Login1Component},
-  {path:'profile', component: ProfileComponent},
-  {path:'acc-settings', component: AccountSettingsComponent},
-  {path:'login2', component: Login2Component},
-  {path:'animated1', component: Animated1Component},
-  {path:'gallery', component: GalleryComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'register1', component: Register1Component},
+  {path: 'register2', component: Register2Component},
+  {path: 'login1', component: Login1Component},
+  {path: 'profile', component: ProfileComponent},
+  {path: 'acc-settings', component: AccountSettingsComponent},
+  {path: 'login2', component: Login2Component},
+  {path: 'animated1', component: Animated1Component},
+  {path: 'gallery', component: GalleryComponent},
   {path: 'checkout', component: CheckoutComponent},
   {path: 'product', component: ProductComponent},
   {path: 'regular', component: RegularTablesComponent},
   {path: 'extended', component: ExtendedTablesComponent},
+  {path: 'about', component: AboutUsComponent},
+  {path: 'blog', component: BlogComponent},
+  {path: 'contact', component: ContactComponent},
+  {path: 'landing', component: LandingComponent},
+  {path: 'pricing', component:PricingComponent},
   {path: 'admin', component:AdminComponent, canActivate:[adminGuard]},
 
 

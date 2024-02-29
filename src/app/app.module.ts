@@ -1,3 +1,6 @@
+;
+import { ChatComponent } from './pages/chat/chat.component';
+import { InvoiceComponent } from './pages/invoice/invoice.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -70,12 +73,18 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {DialogModule} from 'primeng/dialog';
 import {ConfirmDialogModule} from 'primeng/confirmdialog';
-import {MessagesModule} from 'primeng/messages';
+import { MessagesModule } from 'primeng/messages';
 import { FieldsetModule } from 'primeng/fieldset';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { AdminComponent } from './components/admin/admin.component';
 import { IsGrantedDirective } from './directives/is-granted.directive';
 import { UserSelectorComponent } from './components/user-selector/user-selector.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { LandingComponent } from './pages/landing/landing.component';
+import { PricingComponent } from './pages/pricing/pricing.component';
+
 
 
 @NgModule({
@@ -130,8 +139,15 @@ import { UserSelectorComponent } from './components/user-selector/user-selector.
     AdminComponent,
     IsGrantedDirective,
     UserSelectorComponent,
-    
-    
+    AboutUsComponent,
+    BlogComponent,
+    ContactComponent,
+    LandingComponent,
+    PricingComponent,
+    InvoiceComponent,
+    ChatComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -161,8 +177,8 @@ import { UserSelectorComponent } from './components/user-selector/user-selector.
     MessagesModule,
     FieldsetModule,
     RadioButtonModule,
-    
-    
+
+
   ],
   providers: [
     provideClientHydration()

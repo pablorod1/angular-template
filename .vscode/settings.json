@@ -1,0 +1,11 @@
+{
+    "editor.fontFamily": "Cascadia Code",
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.preferredDarkColorTheme": "One Dark Pro",
+    "oneDarkPro.bold": true,
+    "editor.cursorStyle": "line",
+    "errorLens.fontStyleItalic": true,
+    "editor.fontVariations": false,
+    "workbench.productIconTheme": "fluent-icons",
+
+}

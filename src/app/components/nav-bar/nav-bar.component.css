@@ -11,7 +11,6 @@
   border: 0;
 }
 
-
 .navbar-toggler:focus, .navbar-toggler:active{
   outline: none !important;
   border: 0 !important;
@@ -21,7 +20,6 @@
 .navbar-brand{
   color: #023047;
   font-size: 25px;
-
 }
 
 .right-container{
@@ -34,13 +32,19 @@
 
 .nav-link{
   color: #023047;
-  font-size: 16px;
+  font-size: 18px;
+}
+
+.nav-item{
+  margin: 5px;
 }
 
 .dropdown-menu{
   border: 0;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+
 
 
 
@@ -66,10 +70,6 @@ button{
   display: block;
 }
 
-.dropdown-menu li{
-  position: inherit;
-}
-
 .dropdown>.dropdown-toggle:active {
   pointer-events:auto;
 }
@@ -92,32 +92,8 @@ a:active, button:active{
   color: #023047;
 }
 
-.dropdown-menu > li:hover > .dropdown-submenu{
-  display: block;
-}
-
-
-.dropdown-menu-noti{
-  position: absolute;
-  left: -50px;
-}
-
-.dropdown-menu-profile{
-  position: absolute;
-  left: -100px;
-}
-
-app-user-icon{
-  fill: #023047;
-}
-
-.bi.bi-box-arrow-in-right{
-  font-size: 20px;
-}
-
-.bi.bi-bell-fill, .bi.bi-gear-fill, .bi.bi-cart-fill, .bi.bi-list{
-  color: #023047;
-  font-size: 20px;
+.dropdown-menu li{
+  position: relative;
 }
 
 
@@ -152,14 +128,6 @@ app-user-icon{
       transform: translateY(0);
     }
   }
-  .dropdown-menu-end{
-    position: absolute;
-    right: 0;
-  }
-  .dropdown-menu li{
-    position: relative;
-  }
-
 }
 
 
