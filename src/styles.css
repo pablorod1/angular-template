@@ -3,11 +3,12 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-html, body { height: 100%; overflow-x: hidden;}
-body { margin: 0; font-family: "Open Sans", sans-serif; background-color: #f3f3f3;overflow-x: hidden;  }
-footer {background-color: #f3f3f3;}
+html, body { height: 100%; overflow-x: hidden; font-family: 'Work Sans', sans-serif;background-color: #4b4bdf;}
+body { margin: 0; font-family: "Work Sans", sans-serif; background-color: #4b4bdf;overflow-x: hidden; color: #fff; }
+footer {background-color: #4b4bdf;}
 
 
 

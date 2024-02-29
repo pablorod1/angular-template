@@ -1,9 +1,103 @@
 section{
   display: block;
   padding-top: 8rem;
-  padding-bottom: 8rem;
-  max-height: 700px;
-  color: #023047;
+  padding-bottom: 10rem!important;
+}
+
+img{
+  position: relative;
+  max-width: 700px;
+}
+
+.card-blog{
+  width: 70%;
+  height: 600px !important;
+  background-image: url('../../../assets/te-headphones-near-laptop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0;
+  transition: transform 0.4s ease-in-out;
+  .card-body{
+    margin: 40px;
+    color: #f3f3f3;
+    h2{
+      font-size: 35px;
+    }
+  }
+}
+
+.card-blog:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.shadow{
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.card-pricing{
+  max-width: 90%;
+  height: 480px;
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-header{
+    padding: 10px;
+  }
+  .card-footer{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  h6{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  h2{
+    margin-top: 2rem;
+    font-size: 2.75rem;
+    opacity: 80%;
+  }
+  li{
+    font-size: 16px;
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+.img-profile{
+  width: 40px;
+  border-radius: 50%;
+}
+
+.name{
+  font-weight: 500;
+}
+
+.btn-container{
+  position: relative;
+  bottom: -310px;
+}
+
+.btn2{
+  border-radius: 5px;
+  padding: 5px;
+  width: 120px;
+  border: 1px solid #006294;
+  background-color: #006294;
+  color: #fff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+.btn2:hover{
+  background-color: #002D44;
+  border: 1px solid #002D44;
 }
 
 .col-left-1{
@@ -13,20 +107,43 @@ section{
   }
 }
 
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second{
+  max-width: 70%;
+}
+
+.box{
+  margin: 30px;
+  max-width: 70%;
+}
+
 .footer-btn{
   text-decoration: none;
+  color: #fff;
+
+}
+
+.form-group{
+  width: 80%;
 }
 
 .input-form{
   border-radius: 8px;
-  border: .5px solid #023047;
-  width: 70%;
+  border: .5px solid #ff9f31;
+  width: 100%;
   padding: 8px;
 
 }
 
 .input-form:focus{
-  box-shadow: inset 0 1px 2px #023047;
+  box-shadow: inset 0 1px 2px black;
   outline: none;
 }
 
@@ -37,7 +154,7 @@ section{
   width: 120px;
   padding: 8px;
   background-color: #ff9f31;
-  color: #fff;
+  color: #002D44;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.1rem;
@@ -50,19 +167,28 @@ section{
   font-size: 30px;
 }
 
-.bg-success, .bg-primary, .bg-warning{
+.bg-info, .bg-warning{
   --bs-bg-opacity: 0.3;
+}
+
+.bg-success{
+  --bs-bg-opacity: 0.6;
+  color: #38dd2a!important;
+}
+
+.text-success{
+  color:#38dd2a!important;
 }
 
 
 .top-label{
   font-size: 11px;
-  width: 100px;
-  background-color: #023047;
+  width: 85px;
+  background-color: #ff9f31;
   border-radius: 10px;
-  color: #fff;
+  color: #023047;
   text-transform: uppercase;
-
+  font-weight: 600;
 }
 
 .funnel-text{
@@ -73,13 +199,6 @@ section{
 
 
 @media (max-width: 768px){
-  .col-md-4{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .form-group{
     display: flex;
     flex-direction: column;
@@ -95,4 +214,23 @@ section{
   .title{
     text-align: center;
   }
+  img{
+    width: 100%;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+  }
 }
+
+@media (min-width: 768px) and (max-width: 1024px){
+  img{
+    width: 100%;
+  }
+}
+
+

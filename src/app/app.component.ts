@@ -35,13 +35,13 @@ export class AppComponent{
       },
     ]);
     this.rbacService.setAuthenticatedUser({
-      id: 1,
-      name:'root',
+      id: 3,
+      name:'Administrator',
       role: {
-        id: 2,
+        id: 3,
         name: 'Administrator',
         uid: 'ADMINISTRATOR',
-        extends: null,
+        extends: 2,
       },
     });
   }
