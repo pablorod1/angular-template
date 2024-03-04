@@ -20,6 +20,8 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
+import { InvoiceComponent } from './pages/invoice/invoice.component';
+import { ChatComponent } from './pages/chat/chat.component';
 
 
 
@@ -43,6 +45,8 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'landing', component: LandingComponent},
   {path: 'pricing', component:PricingComponent},
+  {path: 'invoice', component:InvoiceComponent},
+  {path: 'chat', component:ChatComponent},
   {path: 'admin', component:AdminComponent, canActivate:[adminGuard]},
 
 

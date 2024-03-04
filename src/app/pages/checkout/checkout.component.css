@@ -110,3 +110,9 @@ app-caret-left {
 .btn:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 1024px){
+  img{
+    width: 40%;
+  }
+}

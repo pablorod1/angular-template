@@ -10,11 +10,11 @@
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            <label class="form-input-label" for="firstName">First Name<span class="text-danger">*</span></label>   
+                                            <label class="form-input-label" for="firstName">First Name<span class="text-danger">*</span></label>
                                             <input class="form-control" formControlName="firstName" placeholder="Javier" type="text" id="firstName" [ngClass]="{'is-invalid': checkoutForm.get('firstName')?.errors?.['required'] && submitted}" [ngClass]="{'is-valid': checkoutForm.get('firstName')?.valid}"/>
                                         </div>
                                         <div class="col-lg-6">
-                                            <label class="form-input-label" for="lastName">Last Name<span class="text-danger">*</span></label> 
+                                            <label class="form-input-label" for="lastName">Last Name<span class="text-danger">*</span></label>
                                             <input class="form-control" formControlName="lastName" placeholder="Rodríguez" type="text" id="lastName" [ngClass]="{'is-invalid': checkoutForm.get('lastName')?.errors?.['required'] && submitted}" [ngClass]="{'is-valid': checkoutForm.get('lastName')?.valid}"/>
                                         </div>
                                     </div>
@@ -22,11 +22,11 @@
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            <label class="form-input-label" for="email">Email<span class="text-danger">*</span></label>   
+                                            <label class="form-input-label" for="email">Email<span class="text-danger">*</span></label>
                                             <input class="form-control" formControlName="email" placeholder="javierrodriguez@email.com" type="email" id="email" [ngClass]="{'is-invalid': (checkoutForm.get('email')?.errors?.['required'] || checkoutForm.get('email')?.errors?.['email']) && submitted}" [ngClass]="{'is-valid': checkoutForm.get('email')?.valid}"/>
                                         </div>
                                         <div class="col-lg-6">
-                                            <label class="form-input-label" for="phone">Phone</label> 
+                                            <label class="form-input-label" for="phone">Phone</label>
                                             <input class="form-control" placeholder="+34 612 345 678" type="text" id="phone"/>
                                         </div>
                                     </div>
@@ -34,11 +34,11 @@
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-lg-8">
-                                            <label class="form-input-label" for="address">Address<span class="text-danger">*</span></label>   
+                                            <label class="form-input-label" for="address">Address<span class="text-danger">*</span></label>
                                             <input class="form-control" formControlName="address" placeholder="Av Condomina 25" type="text" id="address" [ngClass]="{'is-invalid': checkoutForm.get('address')?.errors?.['required'] && submitted}" [ngClass]="{'is-valid': checkoutForm.get('address')?.valid}"/>
                                         </div>
                                         <div class="col-lg-4">
-                                            <label class="form-input-label" for="postal">Postal Code<span class="text-danger">*</span></label> 
+                                            <label class="form-input-label" for="postal">Postal Code<span class="text-danger">*</span></label>
                                             <input class="form-control" formControlName="postalCode" placeholder="03540" type="text" id="postal" [ngClass]="{'is-invalid': checkoutForm.get('postalCode')?.errors?.['required'] && submitted}" [ngClass]="{'is-valid': checkoutForm.get('postalCode')?.valid}"/>
                                         </div>
                                     </div>
@@ -46,15 +46,15 @@
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-lg-4">
-                                            <label class="form-input-label" for="apt">Apt, suite, etc.</label>   
+                                            <label class="form-input-label" for="apt">Apt, suite, etc.</label>
                                             <input class="form-control" placeholder="Esc 3 6D" type="text" id="address"/>
                                         </div>
                                         <div class="col-lg-4">
-                                            <label class="form-input-label" for="city">City<span class="text-danger">*</span></label> 
+                                            <label class="form-input-label" for="city">City<span class="text-danger">*</span></label>
                                             <input class="form-control" formControlName="city" placeholder="Alicante" type="text" id="city" [ngClass]="{'is-invalid': checkoutForm.get('city')?.errors?.['required'] && submitted}" [ngClass]="{'is-valid': checkoutForm.get('city')?.valid}"/>
                                         </div>
                                         <div class="col-lg-4">
-                                            <label class="form-input-label" for="country">Country<span class="text-danger">*</span></label> 
+                                            <label class="form-input-label" for="country">Country<span class="text-danger">*</span></label>
                                             <select class="form-control select" formControlName="country" id="country" [ngClass]="{'is-invalid': checkoutForm.get('country')?.errors?.['required'] && submitted}" [ngClass]="{'is-valid': checkoutForm.get('country')?.valid}">
                                                 <option value="">Select a country</option>
                                                 <option *ngFor="let pais of paises" [value]="pais.codigo">{{pais.nombre}}</option>
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 mt-4">
-                <h1>Your Order</h1>
+                <h1 style="color: #fff;">Your Order</h1>
                 <div class="card shadow cart ">
                     <div class="card-body ">
                         <div class="row d-flex justify-content-center align-items-center">
@@ -139,7 +139,7 @@
                             <h2>Total: </h2>
                             <h2>55€</h2>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
