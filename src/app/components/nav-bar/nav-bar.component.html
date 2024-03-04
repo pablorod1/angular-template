@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon mb-2"></span>
+    <button class="navbar-toggler" data-bs-autoclose="true" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon mb-2"><i class="bi bi-list"></i></span>
     </button>
-    <a class="navbar-brand d-flex justify-content-end" href="#">LucentiaLab</a>
+    <a class="navbar-brand d-flex justify-content-center" href="#">LucentiaLab</a>
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav  mb-2 mb-lg-0">
         <li class="nav-item">
@@ -64,10 +64,10 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle hidden-arrow" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle hidden-arrow" *isGranted="'SELLER'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="px-1 bi bi-table"></i>Tables
           </a>
-          <ul class="dropdown-menu dropdown-submenu">
+          <ul class="dropdown-menu dropdown-submenu" >
             <li><a class="dropdown-item" href="/regular" *isGranted="'ADMINISTRATOR'">Regular</a></li>
             <li><a class="dropdown-item" href="/extended" *isGranted="'SELLER'">Extended</a></li>
           </ul>
@@ -75,18 +75,18 @@
       </ul>
     </div>
     <div class="right-container d-flex align-items-center">
-      <button class="btn mb-1" type="button" *isGranted="'ADMINISTRATOR'" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <button class="btn" type="button" *isGranted="'CUSTOMER'" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
         <i class="bi bi-cart-fill"></i>
       </button>
       <div class="dropdown">
         <a
           data-mdb-dropdown-init
-          class="text-reset px-2 dropdown-toggle hidden-arrow"
+          class="nav-link dropdown-toggle px-2 hidden-arrow"
           id="navbarDropdownMenuLink"
           role="button"
           aria-expanded="false"
         >
-          <i class="bi bi-bell-fill"></i>
+          <i class="bi bi-bell-fill" style="font-size: 15px;"></i>
           <span class="badge rounded-circle bg-danger">1</span>
         </a>
         <ul
@@ -105,15 +105,14 @@
         </ul>
       </div>
       <a href="/acc-settings">
-        <button class="btn mb-1" type="button">
+        <button class="btn" type="button">
           <i class="bi bi-gear-fill"></i>
         </button>
       </a>
       <div class="dropdown">
         <a
           data-mdb-dropdown-init
-          class="dropdown-toggle px-2 d-flex align-items-center hidden-arrow"
-          href="#"
+          class="nav-link dropdown-toggle px-2 d-flex align-items-center hidden-arrow"
           id="navbarDropdownMenuAvatar"
           role="button"
           aria-expanded="false"

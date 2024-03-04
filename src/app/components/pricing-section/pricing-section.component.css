@@ -1,0 +1,155 @@
+section{
+  display: block;
+  padding-top: 8rem;
+  padding-bottom: 15rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.title-container{
+  width: 80%;
+  h1{
+    font-size: 25px;
+    font-weight: 500;
+  }
+  span{
+    word-spacing: .1rem;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+.card{
+  height: 480px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-header{
+    padding: 10px;
+  }
+  .card-footer{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  h6{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: .5rem;
+  }
+  h2{
+    margin-top: 2rem;
+    font-size: 2.75rem;
+    opacity: 80%;
+  }
+  li{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px){
+  .card{
+    width: 100% !important;
+  }
+  img{
+    width: 100%;
+  }
+  .card{
+    margin-bottom: 20px;
+  }
+
+  .tab-btn-container{
+    .nav-tabs{
+      gap: 0px;
+    }
+    .btn3{
+      width: 120px!important;
+    }
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .title-container{
+    width: 100%;
+  }
+}
+
+.tab-btn-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .nav-tabs{
+    border: 0;
+    gap: 30px
+  }
+  .nav-link{
+    background-color: #f9f9f9;
+    color: #023047 !important;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+;
+  }
+  .active{
+    background-color: #ff9f31;
+    color: #f9f9f9;
+    box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.4);
+    .btn3{
+      color: #f9f9f9;
+    }
+  }
+  .btn3{
+    width: 265px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: transparent;
+    color: #023047;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  img{
+    width: 100%;
+  }
+  .card{
+    margin-top: 30px;
+  }
+
+
+  .title-container{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1400px){
+  .tab-btn-container{
+    .btn3{
+      width: 180px;
+    }
+  }
+}

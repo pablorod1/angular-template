@@ -35,14 +35,34 @@ export class AppComponent{
       },
     ]);
     this.rbacService.setAuthenticatedUser({
-      id: 3,
-      name:'Administrator',
+      id: 1,
+      name:'Username',
       role: {
-        id: 3,
+        id: 2,
         name: 'Administrator',
         uid: 'ADMINISTRATOR',
-        extends: 2,
+        extends: null,
       },
     });
+  }
+
+  ngOnInit() {
+    if (this.rbacService.isGranted(Roles.ADMINISTRATOR)) {
+      console.log('Access granted for administrator!');
+    } else {
+      console.log('Access denied for administrator!');
+    }
+
+    if (this.rbacService.isGranted(Roles.SELLER)) {
+      console.log('Access granted for seller!');
+    } else {
+      console.log('Access denied for seller!');
+    }
+
+    if (this.rbacService.isGranted(Roles.CUSTOMER)) {
+      console.log('Access granted for client!');
+    } else {
+      console.log('Access denied for client!');
+    }
   }
 }

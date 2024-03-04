@@ -1,1 +1,106 @@
-<p>contact works!</p>
+<section>
+  <div class="container-fluid">
+    <div class="title text-center">
+      <h1>Got a question?</h1>
+      <span>We'd like to talk more about what you need</span>
+      <div class="btn-container mt-5">
+        <button type="button" class="btn"><i class=" bi bi-chat-fill"></i> Chat with us</button>
+      </div>
+    </div>
+    <div class="contact-methods mt-5">
+      <div class="row row-cols-1 row-cols-md-2 w-100 mt-5 gy-5 text-center d-flex justify-content-center">
+        <div class="col-lg-2">
+          <div class="icon-container">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div class="text-container">
+            <h3>Address</h3>
+            <span>12124 First Street, nr 54</span>
+          </div>
+        </div>
+        <div class="col-lg-2 ">
+          <div class="icon-container">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <div class="text-container">
+            <h3>Email</h3>
+            <span>contacto&commat;email.com</span>
+          </div>
+        </div>
+        <div class="col-lg-2 ">
+          <div class="icon-container">
+            <i class="bi bi-phone"></i>
+          </div>
+          <div class="text-container">
+            <h3>Phone</h3>
+            <span>Description</span>
+          </div>
+        </div>
+        <div class="col-lg-2 ">
+          <div class="icon-container">
+            <i class="bi bi-person-circle"></i>
+          </div>
+          <div class="text-container">
+            <h3>Contact</h3>
+            <span>Description</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-container mt-5">
+    <div class="title-container text-center">
+      <span class="badge rounded-pill text-bg-info" style="font-weight: 500; font-size: 15px;">Leave a message</span>
+      <h1 class="mt-5">Tell us more about <strong>yourself</strong></h1>
+      <span>Whether you have questions or you would just like to say hello, contact us.</span>
+    </div>
+    <div class="card mt-5">
+      <div class="card-body">
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group py-2">
+                <label class="form-input-label py-2 px-1 " for="firstName">First Name</label>
+                <div class="input-group">
+                  <input type="text" class="form-control p-2" placeholder="Javier" id="firstName">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group py-2">
+                <label class="form-input-label py-2 px-1 " for="lastName">Last Name</label>
+                <div class="input-group">
+
+                  <input type="text" class="form-control p-2" placeholder="Rodríguez" id="lastName">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group py-2">
+                <label class="form-input-label py-2 px-1" for="email">Email</label>
+                <div class="input-group">
+                  <input type="text" class="form-control p-2" placeholder="example@email.com" id="email">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group py-2">
+                <label class="form-input-label py-2 px-1" for="message">Your message</label>
+                <div class="input-group">
+                  <textarea type="text" rows="6" class="form-control p-2" id="message"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid map">
+    <google-map height="700px" width="100%"></google-map>
+  </div>
+</section>

@@ -6,6 +6,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GoogleMap } from '@angular/google-maps';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -84,6 +85,10 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
+import { InsightComponent } from './components/insight/insight.component';
+import { PricingSectionComponent } from './components/pricing-section/pricing-section.component';
+import { LatestBlogpostsSectionComponent } from './components/latest-blogposts-section/latest-blogposts-section.component';
+import { TeamSectionComponent } from './components/team-section/team-section.component';
 
 
 
@@ -146,6 +151,10 @@ import { PricingComponent } from './pages/pricing/pricing.component';
     PricingComponent,
     InvoiceComponent,
     ChatComponent,
+    InsightComponent,
+    PricingSectionComponent,
+    LatestBlogpostsSectionComponent,
+    TeamSectionComponent,
 
 
   ],
@@ -177,6 +186,7 @@ import { PricingComponent } from './pages/pricing/pricing.component';
     MessagesModule,
     FieldsetModule,
     RadioButtonModule,
+    GoogleMap,
 
 
   ],

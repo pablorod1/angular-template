@@ -42,6 +42,11 @@ nav{
   margin: 5px;
 }
 
+.icon{
+  color: #f3f3f3!important;
+  font-size: 30px;
+}
+
 .dropdown-menu{
   border: 0;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
@@ -49,8 +54,15 @@ nav{
 }
 
 
+.dropdown-menu-noti{
+  position: absolute;
+  left: -15px;
+}
 
-
+.dropdown-menu-profile{
+  position: absolute;
+  right: 0;
+}
 
 .dropdown-submenu.dropdown-item{
   margin-right: 20px!important;
@@ -65,6 +77,7 @@ nav{
 }
 
 .badge{
+  font-size: 10px;
   position: absolute;
   right: 0;
   top: -8px;

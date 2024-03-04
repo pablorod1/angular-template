@@ -1,5 +1,5 @@
 import { Inject, Injectable } from '@angular/core';
-import { User, Role } from '../types';
+import { User, Role, Roles } from '../types';
 
 
 
@@ -48,6 +48,10 @@ export class RbacService {
 
     if (!user) {
       return false;
+    }
+
+    if (user.role.uid === Roles.ADMINISTRATOR){
+      return true;
     }
 
     if (!this._roles.has(user.role.uid)) {
