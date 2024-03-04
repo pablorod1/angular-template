@@ -62,5 +62,6 @@ thead tr th{
 }
 
 .btn-container{
-  width: 85%;
+  position: relative;
+  bottom: -70px;
 }

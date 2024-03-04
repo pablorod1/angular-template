@@ -75,15 +75,18 @@
             </tfoot>
           </table>
         </div>
-        <div class="footer text-end mt-5">
-          <h3>Thank You!</h3>
-          <span>If you encounter any issues related to the invoice<br> you can contact us at:<br></span>
-          <small>email: lucentialab&commat;gmail.com</small>
+        <div class="footer d-flex justify-content-between mt-5">
+          <div class="btn-container">
+            <button (click)="printInvoice()" type="button" class="btn"><i class="px-1 bi bi-printer"></i> Print</button>
+          </div>
+          <div class="right text-end p-2">
+            <h3>Thank You!</h3>
+            <span>If you encounter any issues related to the invoice<br> you can contact us at:<br></span>
+            <small>email: lucentialab&commat;gmail.com</small>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="btn-container text-end mt-3">
-    <button type="button" class="btn"><i class="px-1 bi bi-printer"></i> Print</button>
-  </div>
+
 </section>
