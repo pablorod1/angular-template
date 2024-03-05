@@ -1,9 +1,4 @@
-section{
-    display: block;
-    position: relative;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
+
 
 .container-fluid{
     display: flex;

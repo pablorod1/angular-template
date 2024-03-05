@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-blog',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './blog.component.css'
 })
 export class BlogComponent {
+  isFollowing: boolean = false;
+  followText: string = 'Follow Me';
 
+  toggleFollow() {
+    this.isFollowing = !this.isFollowing;
+    this.followText = this.isFollowing ? 'Following' : 'Follow Me';
+  }
 }

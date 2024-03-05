@@ -4,10 +4,7 @@
   box-sizing: border-box;
 }
 
-section{
-  display: block;
-  height: 70%;
-}
+
 
 .container{
   display: flex;

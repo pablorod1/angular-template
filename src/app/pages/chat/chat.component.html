@@ -105,8 +105,17 @@
                 <small class="text-muted">Last seen today at 1:53am</small>
               </div>
               <div class="col-2 text-end btn-container d-flex align-items-center">
-                <button type="button" class="btn"><i class="bi bi-gear-fill"></i></button>
-                <button type="button" class="btn"><i class="bi bi-camera-video-fill"></i></button>
+                <div class="dropdown">
+                  <button type="button" role="button" aria-haspopup="true" dropdowntoggle class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-gear-fill"></i></button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-person-fill"></i> Profile </a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-bell-slash"></i> Mute Conversation </a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-ban"></i> Block </a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-x"></i> Delete Chat </a></li>
+                  </ul>
+                </div>
+                <button type="button" matTooltip="Video Call" [matTooltipPosition]="'above'" class="btn"><i class="bi bi-camera-video-fill"></i></button>
               </div>
             </div>
           </div>
@@ -229,7 +238,8 @@
                 <div class="card active text-white">
                   <div class="card-body p-2">
                     <p class="mb-1">
-                      Hola mundo                     </p>
+                      At the end of the day the native dev apps is where users are looking for.
+                    </p>
                     <div class="text-end">
                       <small style="opacity: 80%;">3:45pm
                         <i class="bi bi-check-lg"></i>

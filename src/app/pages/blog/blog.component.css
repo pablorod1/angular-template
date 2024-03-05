@@ -1,0 +1,169 @@
+.first-section{
+  background-image: url(../../../assets/beautiful-architecture-building-tokyo-cityscape.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 110vh;
+  min-width: 100lvw;
+  position: relative;
+  top: -65px;
+  z-index: 0;
+  padding-bottom: 0!important;
+}
+
+.second-section{
+  padding-top: 3rem!important;
+  padding-bottom: 0!important;
+}
+
+.feed-section{
+  padding-top: 5rem!important;
+}
+
+
+.title{
+  h1{
+    font-size: 40px;
+    font-weight: 500;
+  }
+}
+
+.card.post-card{
+  width: 80%;
+  background-color: #023047;
+}
+
+.profile-picture{
+  img{
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+  }
+}
+
+.author{
+  span{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  h5{
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.description{
+  p{
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: justify;
+  }
+}
+
+.post{
+  width: 700px;
+  .date{
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .title{
+    font-size: 31px;
+    font-weight: 500;
+  }
+  .blockquote{
+    border-left: 2px solid rgba(136, 152, 170, 0.3) ;
+    padding-left: 1rem;
+  }
+  p{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 100;
+    text-align: justify;
+
+  }
+}
+
+
+
+.carousel-inner{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.carousel-item{
+  margin: 0;
+  display: block;
+  margin-right: 0;
+  flex: 0 0 calc(100%/5);
+  transition: transform 0.2s ease-out;
+}
+
+.feed-card{
+  color: #023047;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  width: 700px;
+  .img-container{
+    img{
+      width: 55px;
+      border-radius: 50%;
+    }
+  }
+  .name-container{
+    h3{
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .card-body{
+    margin: 5px;
+    p{
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+  }
+  .post-img{
+    img{
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .description{
+    margin: 0 !important;
+    text-align: center!important;
+  }
+  .first-section{
+    position: relative;
+    top: -100px;
+    min-height: 120vh;
+  }
+}
+
+.follow-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s, transform .2s ease;
+  i{
+    font-size: 16px;
+  }
+}
+
+.follow-button:hover{
+  transform: translateY(-2px);
+}
+
+.following {
+  background-color: #28a745; /* success */
+}
+

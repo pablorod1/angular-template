@@ -1,6 +1,4 @@
-section{
-    display: block;
-}
+
 
 .container{
     display: flex;
@@ -18,7 +16,7 @@ section{
     padding: 10px;
     flex-direction: row;
 }
-  
+
 .item{
     display: flex;
     flex: 1;

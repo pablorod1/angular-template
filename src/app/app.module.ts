@@ -19,7 +19,6 @@ import { KeyIconComponent } from './icons/key-icon/key-icon.component';
 import { UserIconComponent } from './icons/user-icon/user-icon.component';
 import { EmailIconComponent } from './icons/email-icon/email-icon.component';
 import { GoogleIconComponent } from './icons/google-icon/google-icon.component';
-import { LoginComponent } from './pages/login/login.component';
 import { PaletteComponent } from './components/palette/palette.component';
 import { Register1Component } from './pages/register1/register1.component';
 import { Login1Component } from './pages/login1/login1.component';
@@ -102,7 +101,6 @@ import { ContactMethodsSectionComponent } from './components/contact-methods-sec
     UserIconComponent,
     EmailIconComponent,
     GoogleIconComponent,
-    LoginComponent,
     PaletteComponent,
     HomeComponent,
     Register1Component,
