@@ -1,0 +1,64 @@
+section{
+  padding-top: 3rem!important;
+}
+
+.container{
+  width: 80%;
+}
+
+.title{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.picture{
+  width: 80%;
+  min-height: 158px;
+  border-radius: 8px;
+}
+
+.profile-picture-container{
+  width: 30px;
+  margin-right: 10px;
+}
+
+.profile-picture{
+  width: 100%;
+  border-radius: 50%;
+  min-height: 30px;
+}
+
+.story-title{
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+}
+
+.description{
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.profile-name{
+  h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+  }
+  small{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@media (max-width: 768px){
+  .profile-picture{
+    width: 100%;
+    border-radius: 50%;
+  }
+  .story-title{
+    margin-top: 2rem;
+  }
+}

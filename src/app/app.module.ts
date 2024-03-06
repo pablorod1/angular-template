@@ -89,6 +89,7 @@ import { PricingSectionComponent } from './components/pricing-section/pricing-se
 import { LatestBlogpostsSectionComponent } from './components/latest-blogposts-section/latest-blogposts-section.component';
 import { TeamSectionComponent } from './components/team-section/team-section.component';
 import { ContactMethodsSectionComponent } from './components/contact-methods-section/contact-methods-section.component';
+import { RelatedStoriesSectionComponent } from './components/related-stories-section/related-stories-section.component';
 
 
 
@@ -155,6 +156,7 @@ import { ContactMethodsSectionComponent } from './components/contact-methods-sec
     LatestBlogpostsSectionComponent,
     TeamSectionComponent,
     ContactMethodsSectionComponent,
+    RelatedStoriesSectionComponent,
 
 
   ],

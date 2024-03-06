@@ -1,1 +1,48 @@
+.first-section{
+  background-image: url(https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg?w=1800&t=st=1709724410~exp=1709725010~hmac=7f176faaf68d9e019f846905791967599d7e4f325ce3fae095afbffd24616618);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 110vh;
+  min-width: 100lvw;
+  position: relative;
+  top: -65px;
+  z-index: 0;
+  padding-bottom: 0!important;
+}
 
+.title{
+  position: relative;
+  top: 150px;
+  h1{
+    font-size: 35px;
+    font-weight: 600;
+  }
+  span{
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+.title2{
+  h1{
+    font-size: 25px;
+    font-weight: 400;
+  }
+  span{
+    max-width: 60%;
+    font-size: 16px;
+    font-weight: 200;
+  }
+}
+
+
+.icon{
+  font-size: 100px;
+}
+
+@media (max-width: 768px){
+  .first-section{
+    position: relative;
+    top: -95px;
+  }
+}
