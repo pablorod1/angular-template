@@ -32,14 +32,15 @@
         </div>
       </div>
     </div>
-    <div class="paginator">
-      <mat-paginator
-        [length]="galleryData.length"
-        [pageSize]="6"
-        [pageSizeOptions]="[6]"
-        hidePageSize
-        showFirstLastButtons
-      ></mat-paginator>
-    </div>
+
   </div>
 </section>
+<div class="paginator">
+  <mat-paginator
+    [length]="galleryData.length"
+    [pageSize]="6"
+    [pageSizeOptions]="[6]"
+    hidePageSize
+    showFirstLastButtons
+  ></mat-paginator>
+</div>

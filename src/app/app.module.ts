@@ -90,6 +90,7 @@ import { LatestBlogpostsSectionComponent } from './components/latest-blogposts-s
 import { TeamSectionComponent } from './components/team-section/team-section.component';
 import { ContactMethodsSectionComponent } from './components/contact-methods-section/contact-methods-section.component';
 import { RelatedStoriesSectionComponent } from './components/related-stories-section/related-stories-section.component';
+import { GridPicturesComponent } from './components/grid-pictures/grid-pictures.component';
 
 
 
@@ -157,6 +158,7 @@ import { RelatedStoriesSectionComponent } from './components/related-stories-sec
     TeamSectionComponent,
     ContactMethodsSectionComponent,
     RelatedStoriesSectionComponent,
+    GridPicturesComponent,
 
 
   ],

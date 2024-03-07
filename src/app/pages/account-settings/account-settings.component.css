@@ -1,4 +1,13 @@
-
+#payment{
+  img{
+    width: 100%;
+  }
+  .card-body{
+    max-height: 30vh;
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+}
 
 .container{
   display: flex;

@@ -1,5 +1,5 @@
 .first-section{
-  background-image: url(https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg?w=1800&t=st=1709724410~exp=1709725010~hmac=7f176faaf68d9e019f846905791967599d7e4f325ce3fae095afbffd24616618);
+  background-image: url(https://img.freepik.com/free-photo/structure-shanghai-tourism-truss-metal_1127-2811.jpg?w=1380&t=st=1709740845~exp=1709741445~hmac=25bbdd5302a775b585424d3cd7d70a666891016042f6762d6dccf5bcc6b22752);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 110vh;
@@ -11,8 +11,8 @@
 }
 
 .title{
-  position: relative;
-  top: 150px;
+
+  color: #f8f8f8;
   h1{
     font-size: 35px;
     font-weight: 600;
@@ -44,5 +44,37 @@
   .first-section{
     position: relative;
     top: -95px;
+  }
+}
+
+.arrow:focus{
+  border: 0;
+}
+
+.arrow
+{
+  color: #fff;
+  font-size: 100px;
+  position: relative;
+  bottom: -25rem;
+
+  /**
+   * Dark Arrow Down
+   */
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
   }
 }
