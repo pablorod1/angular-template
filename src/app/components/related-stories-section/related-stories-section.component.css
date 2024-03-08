@@ -18,25 +18,26 @@ section{
 }
 
 .profile-picture-container{
-  width: 30px;
+  width: 40px;
+  min-height: 40px;
   margin-right: 10px;
 }
 
 .profile-picture{
   width: 100%;
   border-radius: 50%;
-  min-height: 30px;
+  min-height: 40px;
 }
 
 .story-title{
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
   text-decoration: none;
   color: #fff;
 }
 
 .description{
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.25;
 }
@@ -52,6 +53,8 @@ section{
     color: rgba(255, 255, 255, 0.4);
   }
 }
+
+
 
 @media (max-width: 768px){
   .profile-picture{

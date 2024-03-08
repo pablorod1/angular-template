@@ -22,6 +22,7 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { InvoiceComponent } from './pages/invoice/invoice.component';
 import { ChatComponent } from './pages/chat/chat.component';
+import { Blog2Component } from './pages/blog2/blog2.component';
 
 
 
@@ -42,6 +43,7 @@ const routes: Routes = [
   {path: 'extended', component: ExtendedTablesComponent},
   {path: 'about', component: AboutUsComponent},
   {path: 'blog', component: BlogComponent},
+  {path: 'blog-posts', component: Blog2Component},
   {path: 'contact', component: ContactComponent},
   {path: 'landing', component: LandingComponent},
   {path: 'pricing', component:PricingComponent},

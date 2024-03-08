@@ -6,6 +6,10 @@ section {
 
 }
 
+.btn-inner--text{
+  font-weight: 500;
+}
+
 .container {
   display: flex;
   justify-content: center;

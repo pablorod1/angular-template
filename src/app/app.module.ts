@@ -91,6 +91,12 @@ import { TeamSectionComponent } from './components/team-section/team-section.com
 import { ContactMethodsSectionComponent } from './components/contact-methods-section/contact-methods-section.component';
 import { RelatedStoriesSectionComponent } from './components/related-stories-section/related-stories-section.component';
 import { GridPicturesComponent } from './components/grid-pictures/grid-pictures.component';
+import { Blog2Component } from './pages/blog2/blog2.component';
+import { TeamSection2Component } from './components/team-section2/team-section2.component';
+import { NewsletterSectionComponent } from './components/newsletter-section/newsletter-section.component';
+import { ContactFormSectionComponent } from './components/contact-form-section/contact-form-section.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { InsightSection2Component } from './components/insight-section2/insight-section2.component';
 
 
 
@@ -159,6 +165,13 @@ import { GridPicturesComponent } from './components/grid-pictures/grid-pictures.
     ContactMethodsSectionComponent,
     RelatedStoriesSectionComponent,
     GridPicturesComponent,
+    Blog2Component,
+    TeamSection2Component,
+    NewsletterSectionComponent,
+    ContactFormSectionComponent,
+    FooterComponent,
+    InsightSection2Component,
+
 
 
   ],

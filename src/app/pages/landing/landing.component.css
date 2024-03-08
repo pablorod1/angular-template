@@ -11,7 +11,8 @@
 }
 
 .title{
-
+  position: relative;
+  top: 200px;
   color: #f8f8f8;
   h1{
     font-size: 35px;
@@ -56,7 +57,7 @@
   color: #fff;
   font-size: 100px;
   position: relative;
-  bottom: -25rem;
+  bottom: -30rem;
 
   /**
    * Dark Arrow Down

@@ -78,7 +78,7 @@
   p{
     font-size: 16px;
     line-height: 1.5;
-    font-weight: 100;
+    font-weight: 300;
     text-align: justify;
 
   }
@@ -162,12 +162,6 @@
   .btn-container{
     display: flex;
     flex-direction: column;
-  }
-  .input-group-prepend{
-    img{
-      border-radius: 50%;
-      width: 20px;
-    }
   }
 }
 
@@ -262,16 +256,8 @@
   }
 }
 
-.input-group-text{
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  background-color: #fff;
-  border-left: 0;
-  border: 1px solid #023047;
-}
 
 .form-control{
-  border-right: 0 !important;
   border: 1px solid #023047;
 }
 
@@ -281,9 +267,18 @@
   border: 1px solid #023047;
 }
 
+
 .comments{
   max-height: 50vh;
   overflow: auto;
   overflow-x: hidden;
 }
 
+.btn-send{
+  position: relative;
+  border-radius: 5px;
+  width: 50px;
+  padding: 7px;
+  background-color: transparent;
+  border: 1px solid #023047;
+}

@@ -103,7 +103,7 @@
             src="https://img.freepik.com/free-photo/mountain-valley-pyrenees_1398-4818.jpg?t=st=1709738812~exp=1709742412~hmac=18e1e042831ef6d85abf233c94edcd5e31ba59a602f74a735c517cc8846db1f4&w=1380"
             alt="Post">
         </div>
-        <div class="post-content mt-4 gap-5 d-flex justify-content-between align-items-center">
+        <div class="post-content w-100 mt-4 gap-5 d-flex justify-content-between align-items-center">
           <div class="btn-container d-flex">
             <button type="button" class="btn like-button" [ngClass]="{ 'like ':isLike }" (click)="toggleLike()">
               <i *ngIf="!isLike" class="bi bi-heart"></i>
@@ -112,7 +112,7 @@
             <button type="button" class="btn"><i class="bi bi-chat-fill"></i> 15 </button>
             <button type="button" class="btn"><i class="bi bi-share-fill"></i> Share </button>
           </div>
-          <div class="profiles-container">
+          <div class="profiles-container text-end">
             <div class="icons-container align-items-center">
               <img class="avatar icon1"
                 src="https://demos.creative-tim.com/argon-design-system-pro-angular/assets/img/faces/team-3.jpg"
@@ -161,13 +161,15 @@
           </div>
         </div>
       </div>
-      <div class="comment-input m-4">
-        <div class="input-group align-items-center">
-          <input class="form-control" type="text" placeholder="Your Comment">
-          <div class="input-group-append">
-            <span class="input-group-text">
-              <i class="bi bi-send"></i>
-            </span>
+      <div class="comment-input d-flex align-items-center m-4">
+        <div class="row w-100">
+          <div class="col-10">
+            <div class="input-group align-items-center">
+              <input class="form-control" type="text" placeholder="Your Comment">
+            </div>
+          </div>
+          <div class="col-2">
+            <button type="button" class="btn-send"><i class="bi bi-send"></i></button>
           </div>
         </div>
       </div>

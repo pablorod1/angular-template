@@ -11,10 +11,16 @@ section {
   align-items: center;
 }
 
+.card{
+  padding: 5px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+}
+
 .profile-picture{
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
 .profile-container{
@@ -24,4 +30,63 @@ section {
     justify-content: center;
     align-items: center;
   }
+}
+
+.btn{
+  border-radius: 5px;
+  transition: transform .3s ease;
+}
+
+.follow-btn{
+  background-color: #023047;
+  color: #fff;
+}
+
+.follow-btn:active{
+  background-color: #023047;
+  color: #fff;
+}
+
+.following{
+  background-color: #28a745;
+}
+
+.message-btn{
+  background-color: #fff;
+  color: #023047;
+  border: 1px solid #023047;
+}
+
+.btn:hover{
+  transform: scale(1.07);
+}
+
+.message-btn:active{
+  background-color: #023047;
+  color: #fff;
+}
+
+.edit-container{
+  .btn{
+    background-color: #023047;
+    color: #fff;
+  }
+}
+
+.socials-card{
+  span{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  i{
+    font-size: 20px;
+  }
+}
+
+.progress{
+  height: 8px;
+}
+.progress-bar{
+  height: 8px!important;
+  border-radius: 10px;
 }
