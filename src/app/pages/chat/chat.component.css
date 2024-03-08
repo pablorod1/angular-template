@@ -5,7 +5,7 @@
 
 .card.right-card{
   .card-body{
-    max-height: 70vh;
+    max-height: 50vh;
     overflow: auto;
     overflow-x: hidden;
     img{
@@ -91,6 +91,7 @@
   background-color: #fff;
   border-left: 0;
   border: 1px solid #023047;
+  height: 50px;
 }
 
 .list-group{

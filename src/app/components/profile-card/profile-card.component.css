@@ -1,0 +1,54 @@
+.card{
+  background-color: transparent;
+  border: 0;
+  width: 400px;
+  height: 100%;
+}
+
+.dropdown-menu{
+  position: absolute;
+  right: -100px;
+}
+
+.card-body{
+  background-color: #fff!important;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  h1{
+    font-size: 27px;
+    font-weight: 600;
+  }
+  i{
+    color: #023047;
+    font-size: 18px;
+  }
+  h3{
+    font-weight: 500;
+  }
+}
+
+.card-img{
+  background-color: transparent;
+  position: relative;
+  color: #fff;
+  .name{
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+  }
+  .btn{
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+  }
+  img{
+    vertical-align: middle;
+    max-width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+}

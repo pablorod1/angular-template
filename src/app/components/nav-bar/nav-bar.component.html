@@ -87,20 +87,15 @@
       </ul>
     </div>
     <div class="right-container d-flex align-items-center">
-      <button class="btn" type="button" *isGranted="'CUSTOMER'" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <button class="px-2 btn" type="button" *isGranted="'CUSTOMER'" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
         <i class="bi bi-cart-fill"></i>
       </button>
       <div class="dropdown">
-        <a
-          data-mdb-dropdown-init
-          class="nav-link dropdown-toggle px-2 hidden-arrow"
-          id="navbarDropdownMenuLink"
-          role="button"
-          aria-expanded="false"
-        >
-          <i class="bi bi-bell-fill" style="font-size: 15px;"></i>
-          <span class="badge rounded-circle bg-danger">1</span>
-        </a>
+        <button class="px-2 button nav-link dropdown-toggle hidden-arrow" id="navbarDropdownMenuLink"
+        role="button"
+        aria-expanded="false" data-mdb-dropdown-init >
+          <i class="bell bi bi-bell-fill"></i>
+       </button>
         <ul
           class="dropdown-menu dropdown-menu-noti"
           aria-labelledby="navbarDropdownMenuLink"
@@ -117,7 +112,7 @@
         </ul>
       </div>
       <a href="/acc-settings">
-        <button class="btn" type="button">
+        <button class="px-2 btn gear" type="button">
           <i class="bi bi-gear-fill"></i>
         </button>
       </a>

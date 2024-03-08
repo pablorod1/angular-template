@@ -97,7 +97,9 @@ import { NewsletterSectionComponent } from './components/newsletter-section/news
 import { ContactFormSectionComponent } from './components/contact-form-section/contact-form-section.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { InsightSection2Component } from './components/insight-section2/insight-section2.component';
-
+import { MultiSlideCarouselComponent } from './components/multi-slide-carousel/multi-slide-carousel.component';
+import { CarouselModule } from 'primeng/carousel';
+import { ProfileCardComponent } from './components/profile-card/profile-card.component';
 
 
 @NgModule({
@@ -171,6 +173,8 @@ import { InsightSection2Component } from './components/insight-section2/insight-
     ContactFormSectionComponent,
     FooterComponent,
     InsightSection2Component,
+    MultiSlideCarouselComponent,
+    ProfileCardComponent,
 
 
 
@@ -204,7 +208,7 @@ import { InsightSection2Component } from './components/insight-section2/insight-
     FieldsetModule,
     RadioButtonModule,
     GoogleMapsModule,
-
+    CarouselModule,
 
   ],
   providers: [
