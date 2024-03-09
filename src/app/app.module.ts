@@ -100,6 +100,10 @@ import { InsightSection2Component } from './components/insight-section2/insight-
 import { MultiSlideCarouselComponent } from './components/multi-slide-carousel/multi-slide-carousel.component';
 import { CarouselModule } from 'primeng/carousel';
 import { ProfileCardComponent } from './components/profile-card/profile-card.component';
+import { InsightSection3Component } from './components/insight-section3/insight-section3.component';
+import { AboutSectionComponent } from './components/about-section/about-section.component';
+import { FeedSectionComponent } from './components/feed-section/feed-section.component';
+import { PostsGridComponent } from './components/posts-grid/posts-grid.component';
 
 
 @NgModule({
@@ -175,6 +179,10 @@ import { ProfileCardComponent } from './components/profile-card/profile-card.com
     InsightSection2Component,
     MultiSlideCarouselComponent,
     ProfileCardComponent,
+    InsightSection3Component,
+    AboutSectionComponent,
+    FeedSectionComponent,
+    PostsGridComponent,
 
 
 

@@ -1,0 +1,49 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+}
+
+.card-img{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  img{
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+.card{
+  border: 0;
+}
+.category{
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.post-title{
+  text-decoration: none;
+  font-size: 18px;
+  color: #e88d25;
+  font-weight: 400;
+}
+.post-title:hover{
+  color: #ffa742;
+}
+.description-post{
+  color: rgba(255, 255, 255, 0.7);
+  a{
+    text-decoration: none;
+    appearance: none;
+    color: #ffa742;
+  }
+}
+
+.img-container{
+  img{
+    width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+  }
+}

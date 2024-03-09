@@ -1,11 +1,24 @@
 
 
-.container-fluid{
+.container{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
+.title{
+  margin: 30px;
+  margin-bottom: 5rem;
+  h1{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  p{
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
 
 
 a{
@@ -13,20 +26,31 @@ a{
   font-weight: 400;
 }
 
-.box{
+.card{
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 80px;
-  max-width: 250px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s, filter 0.3s;
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.box-2{
-  position: relative;
-  top: -100px;
+.card:hover{
+  transform: scale(1.1);
+  z-index: 2;
 }
+
+
+.card-2{
+  position: relative;
+  top: -80px;
+}
+
 
 .footer-btn{
   text-decoration: none;
@@ -42,29 +66,17 @@ a{
   border-radius: 50%;
   width: max-content;
   font-size: 30px;
-  box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.bg-info, .bg-warning{
-  --bs-bg-opacity: 0.3;
-}
 
-.bg-success{
-  --bs-bg-opacity: 0.6;
-  color: #38dd2a!important;
-}
 
-.text-success{
-  color:#38dd2a!important;
-}
 
 .text-container{
   h2{
-    font-size: 25px;
     font-weight: 500;
   }
   span{
-    font-size: 16px;
     font-weight: 300;
   }
 }
@@ -93,7 +105,7 @@ a{
 }
 
 @media (max-width: 768px){
-  .box{
+  .card{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -106,7 +118,7 @@ a{
       flex-direction: column;
     }
   }
-  .box-2{
+  .card-2{
     position: relative;
     top: 0;
   }

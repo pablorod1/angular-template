@@ -28,8 +28,7 @@
 }
 
 .row{
-  background-color: #fff;
-  border-radius: 8px;
+
   display: flex;
   align-items: center;
 }
@@ -72,6 +71,9 @@ app-cart-icon{
 }
 
 .info-container{
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 8px;
   h1{
     font-size: 2rem;
   }
