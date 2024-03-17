@@ -26,15 +26,7 @@
   }
 }
 
-.icon-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 800px;
-  position: relative;
-  top: -80px;
-  opacity: 30%;
-}
+
 
 .basic-elements {
   .img-container {

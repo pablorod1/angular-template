@@ -23,6 +23,7 @@ import { PricingComponent } from './pages/pricing/pricing.component';
 import { InvoiceComponent } from './pages/invoice/invoice.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { Blog2Component } from './pages/blog2/blog2.component';
+import { SectionsComponent } from './pages/sections/sections.component';
 
 
 
@@ -49,6 +50,7 @@ const routes: Routes = [
   {path: 'pricing', component:PricingComponent},
   {path: 'invoice', component:InvoiceComponent},
   {path: 'chat', component:ChatComponent},
+  {path: 'sections', component: SectionsComponent},
   {path: 'admin', component:AdminComponent, canActivate:[adminGuard]},
 
 

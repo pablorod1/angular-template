@@ -104,6 +104,11 @@ import { InsightSection3Component } from './components/insight-section3/insight-
 import { AboutSectionComponent } from './components/about-section/about-section.component';
 import { FeedSectionComponent } from './components/feed-section/feed-section.component';
 import { PostsGridComponent } from './components/posts-grid/posts-grid.component';
+import { SectionsComponent } from './pages/sections/sections.component';
+import { InsightSection4Component } from './components/insight-section4/insight-section4.component';
+import { RelatedStories2Component } from './components/related-stories2/related-stories2.component';
+import { PricingSection2Component } from './components/pricing-section2/pricing-section2.component';
+import { PricingSection3Component } from './components/pricing-section3/pricing-section3.component';
 
 
 @NgModule({
@@ -183,6 +188,11 @@ import { PostsGridComponent } from './components/posts-grid/posts-grid.component
     AboutSectionComponent,
     FeedSectionComponent,
     PostsGridComponent,
+    SectionsComponent,
+    InsightSection4Component,
+    RelatedStories2Component,
+    PricingSection2Component,
+    PricingSection3Component,
 
 
 
