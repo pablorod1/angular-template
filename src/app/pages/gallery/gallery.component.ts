@@ -47,7 +47,6 @@ export class GalleryComponent implements OnInit{
 
   addToCart(item: GalleryItem){
     this.cartService.addToCart(item);
-    console.log(this.totalPrice);
   }
 
   scrollToTop() {

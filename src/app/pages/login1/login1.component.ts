@@ -1,8 +1,7 @@
-import { Component, OnInit, inject } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { log } from 'console';
-import { RbacService } from '../../services/rbac.service';
-import { Roles } from '../../types';
+import { Component  } from '@angular/core';
+import { FormBuilder,  FormGroup, Validators } from '@angular/forms';
+
+
 import { Router } from '@angular/router';
 
 @Component({
@@ -19,7 +18,7 @@ export class Login1Component{
 
   constructor(
     private fb: FormBuilder,
-    private _rbacService: RbacService,
+
     private router: Router,
   ){
 
@@ -41,38 +40,9 @@ export class Login1Component{
   onSubmit(){
     this.submitted = true;
     if (this.loginForm1.valid){
-      this._rbacService.setAuthenticatedUser({
-        id:1,
-        name: 'Customer',
-        role: {
-          id:1,
-          name: 'Customer',
-          uid: 'CUSTOMER',
-          extends: null,
-        },
-      });
-      alert("You logged in as Client.");
-      this.router.navigate(['/regular']);
+      alert("Formulario enviado");
     }
     
-    
-    if (this._rbacService.isGranted(Roles.ADMINISTRATOR)) {
-      console.log('Access granted for administrator!');
-    } else {
-      console.log('Access denied for administrator!');
-    }
-
-    if (this._rbacService.isGranted(Roles.SELLER)) {
-      console.log('Access granted for Seller!');
-    } else {
-      console.log('Access denied for Seller!');
-    }
-
-    if (this._rbacService.isGranted(Roles.CUSTOMER)) {
-      console.log('Access granted for user!');
-    } else {
-      console.log('Access denied for user!');
-    }
   }
 
 }

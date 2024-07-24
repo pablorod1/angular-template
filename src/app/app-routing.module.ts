@@ -14,7 +14,6 @@ import { ProductComponent } from './pages/product/product.component';
 import { RegularTablesComponent } from './pages/regular-tables/regular-tables.component';
 import { ExtendedTablesComponent } from './pages/extended-tables/extended-tables.component';
 import { AdminComponent } from './components/admin/admin.component';
-import { adminGuard } from './guards/admin.guard';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -51,7 +50,6 @@ const routes: Routes = [
   {path: 'invoice', component:InvoiceComponent},
   {path: 'chat', component:ChatComponent},
   {path: 'sections', component: SectionsComponent},
-  {path: 'admin', component:AdminComponent, canActivate:[adminGuard]},
 
 
 ];

@@ -77,8 +77,6 @@ import { MessagesModule } from 'primeng/messages';
 import { FieldsetModule } from 'primeng/fieldset';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { AdminComponent } from './components/admin/admin.component';
-import { IsGrantedDirective } from './directives/is-granted.directive';
-import { UserSelectorComponent } from './components/user-selector/user-selector.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -160,8 +158,6 @@ import { PricingSection3Component } from './components/pricing-section3/pricing-
     RegularTablesComponent,
     ExtendedTablesComponent,
     AdminComponent,
-    IsGrantedDirective,
-    UserSelectorComponent,
     AboutUsComponent,
     BlogComponent,
     ContactComponent,

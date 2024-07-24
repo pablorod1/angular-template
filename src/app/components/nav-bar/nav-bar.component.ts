@@ -1,6 +1,4 @@
-import { Component, inject } from '@angular/core';
-import { RbacService } from '../../services/rbac.service';
-import { Roles } from '../../types';
+import { Component } from '@angular/core';
 
 
 @Component({

@@ -3,14 +3,11 @@
     <button class="navbar-toggler" data-bs-autoclose="true" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="icon mb-2"><i class="bi bi-list"></i></span>
     </button>
-    <a id="navbar-brand" class="navbar-brand d-flex justify-content-center" href="#">LucentiaLab</a>
+    <a id="navbar-brand" class="navbar-brand d-flex justify-content-center" href="#">Pablo</a>
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav  mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#"><i class="px-1 bi bi-house"></i>Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" *isGranted="'ADMINISTRATOR'" href="/admin"><i class="px-1 bi bi-file-lock"></i>Admin Panel</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/sections"><i class="px-1 bi bi-list-task"></i>Sections</a>
@@ -76,18 +73,18 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle hidden-arrow" *isGranted="'SELLER'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle hidden-arrow"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="px-1 bi bi-table"></i>Tables
           </a>
           <ul class="dropdown-menu dropdown-submenu" >
-            <li><a class="dropdown-item" href="/regular" *isGranted="'ADMINISTRATOR'">Regular</a></li>
-            <li><a class="dropdown-item" href="/extended" *isGranted="'SELLER'">Extended</a></li>
+            <li><a class="dropdown-item" href="/regular" >Regular</a></li>
+            <li><a class="dropdown-item" href="/extended" >Extended</a></li>
           </ul>
         </li>
       </ul>
     </div>
     <div class="right-container d-flex align-items-center">
-      <button class="px-2 btn" type="button" *isGranted="'CUSTOMER'" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <button class="px-2 btn" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
         <i class="bi bi-cart-fill"></i>
       </button>
       <div class="dropdown">
